@@ -31,10 +31,10 @@ function addProjectDetails(e) {
 function callBackFn(result) {
 	//console.log(response);
 	 var projectHTML = 
-    '<img src="' + result.image + '" class="detailsImage">' +
-    '<p>' + result.title + '</p>' +
-    '<p><small>' + result.date +
-    result.summary +
+    '<img src="' + result['image'] + '" class="detailsImage">' +
+    '<p>' + result['title'] + '</p>' +
+    '<p><small>' + result['date'] +
+    result['summary'] +
     '</small></p>';
-$("#project" + result.id + " " + ".details").html(projectHTML);
+$("#project" + result['id'] + " " + ".details").html(projectHTML);
 }
